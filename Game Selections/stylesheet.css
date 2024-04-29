@@ -1,0 +1,2686 @@
+:root{
+    --color1: #ab4e68;
+    --color2: #b07156;
+    --color3: linear-gradient(190deg, #000000, #361363, #4b4b4b);
+    --color4: linear-gradient(190deg, #AFA79F, #440381, #9B7EDE);
+    --color5: #c4a287;
+    --color6: #4a646c;
+    --color7: #333;
+    --color8: #fff;
+    --transition: all .3s ease-in-out;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: sans-serif;
+}
+/* Header nav bar */
+.navbar{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 111;
+    background-image: linear-gradient(40deg, rgb(0, 0, 0), rgb(59, 15, 113));
+}
+.menu-btn{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.navbar .logo img{
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    font-family: sans-serif;
+    display: block;
+    margin-left: 20px;
+    color: white;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar .menu li a i{
+    color:#f63e4e;
+}
+.navbar .menu li .active:hover{
+    border-bottom: 4px solid yellowgreen;
+    transform: translateY(-10%);
+    transition: .5s;
+}
+.navbar .menu li .AboutUs:hover{
+    border-bottom: 4px solid green;
+    transform: translateY(-10%);
+    transition: .5s;
+}
+.navbar .menu li .Account:hover{
+    border-bottom: 4px solid rgb(54, 54, 196);
+    transform: translateY(-10%);
+    transition: .5s;
+}
+/*Content BG Image*/
+.content{
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(MarioBG1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 12% 5% 5% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+.content h1, p{
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;    
+  font-style: normal;
+}
+.content h1{
+    padding-top: 20px;
+    font-size: 90px;
+}
+.content p{
+    font-size: 55px;
+    margin-top: 20px;
+}
+
+/*Heading Home Page*/
+ .pheading{
+    font-size: 65px;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    color: white;
+    width: 1200px;
+}
+/*Front heading page*/
+.fpage{
+    margin: 50px auto;
+    width: 1200px;
+    display: flex;
+    background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(52, 52, 53));
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px 0;
+}
+.fpage img{
+    width: auto;
+    height: 100px;
+    margin: auto;
+}
+.fdesc{
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*Footer home page*/
+footer{
+    background: linear-gradient(20deg, rgb(0, 0, 0), rgb(59, 15, 113));
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+footer p{
+    color: white;
+    text-align: center;
+    line-height: 10vh;
+}
+footer p a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+/*Footer about us page*/
+.sec-footer{
+    display: flex;
+    margin: auto;
+    width: 1000px;
+    text-align: start;
+}
+.footer2, .footer3, .footer4, .footer5{
+    padding: 30px 50px;
+}
+.footer2 h3, .footer3 h3, .footer4 h3, .footer5 h3{
+    padding-bottom: 10px;
+}
+.footer4 a{
+    text-decoration: none;
+    color: white;
+}
+.footer4 a:hover{
+    color: rgb(198, 198, 198);
+}
+.footer4 i{
+    color: rgb(109, 109, 186);
+}
+.footer4 img{
+    width: 20px;
+}
+
+/*About Us*/
+.maindesc{
+    padding: 30px;
+    width: 1400px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.maindesc h2{
+    font-size: 25px;
+}
+.listdesc1, .listdesc2{
+    color: yellow;
+    padding: 30px;
+    font-size: 12px;
+}
+.hr{
+    color: white;
+    width: 1400px;
+    margin: auto;
+}
+.AboutUs2{
+    width: 1400px;
+    margin: auto;
+}
+.AB2{
+    display: flex;
+}
+.AboutUs2 img{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    animation: glow 2s infinite alternate;
+}
+.AboutUs2 img, .AboutUs3 img{
+    display: block;
+    margin: auto;
+    width: 800px;
+    height: auto;
+}
+.AboutUs3{
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.AboutUs3 .AB3 img{
+    width: 500px;
+    height: auto;
+    padding-right: 50px;
+}
+.AB3{
+    display: flex;
+    margin: auto;
+    width: 1500px;
+    padding: 30px;
+}
+.AB3img{
+    width: 500px;
+}
+.AboutUsdesc1{
+    color: white;
+    margin: auto;
+    border-left: 1px solid white;
+}
+.AboutUsdesc1 h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+.AboutUsdesc1 h3{
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+.AboutUsdesc1 hr{
+    color: white;
+}
+.aboutSec1, .aboutSec2{
+    width: 500px;
+    font-size: 20px;
+    color: white;
+    margin: 200px auto 50px;
+    text-align: center;
+}
+.aboutSec1 h1{
+    margin-bottom: 50px;
+    padding: 20px 0;
+    border-radius: 69px 11px 69px 11px;
+    -webkit-border-radius: 69px 11px 69px 11px;
+    -moz-border-radius: 69px 11px 69px 11px;
+    background: linear-gradient(40deg, rgb(120, 52, 204), rgb(40, 11, 75), rgb(155, 30, 73),rgb(120, 52, 204));
+    border: 5px solid #d14feb;
+}
+.aboutSec2 h1{
+    margin-bottom: 50px;
+    border-radius: 69px 11px 69px 11px;
+    -webkit-border-radius: 69px 11px 69px 11px;
+    -moz-border-radius: 69px 11px 69px 11px;
+    background: linear-gradient(40deg, rgb(120, 52, 204), rgb(40, 11, 75), rgb(155, 30, 73),rgb(120, 52, 204));
+    border: 5px solid #d14feb;
+}
+
+/*About Us Slideshow image*/
+.slideshow {    
+    position: relative;
+    width: 1100px;
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    animation: animationglow 2s infinite alternate;
+}
+.slides{
+    display: flex;
+    animation: slide-animation 15s infinite; 
+    z-index: -1;
+}
+.slide {
+    flex: 0 0 auto;
+    width: 800px;
+    height: 500px; 
+    background-size: cover;
+}
+#slide1 {
+    background-image: url('AboutUsimg1.jpg');
+}
+#slide2 {
+    background-image: url('AboutUsimg5.jpg');
+}
+#slide3 {
+    background-image: url('AboutUsiimg3.jpg');
+}
+#slide4 {
+    background-image: url('AboutUsimg4.jpg');
+}
+@keyframes slide-animation {
+    0% {
+        transform: translateX(0);
+    }
+    16.66% {
+        transform: translateX(-100%);
+    }
+    33.66% {
+        transform: translateX(-200%);
+    }
+    48.66% {
+        transform: translateX(-300%);
+    }
+    65.66% {
+        transform: translateX(-200%);
+    }
+    82.66% {
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes glow {
+    0% {
+      border-color: rgb(93, 4, 141); /* initial color */
+      box-shadow: 0 0 10px rgb(93, 4, 141); /* initial shadow */
+    }
+    100% {
+      border-color: rgb(167, 80, 214); /* final color */
+      box-shadow: 0 0 20px rgb(167, 80, 214); /* final shadow */
+    }
+}
+@keyframes animationglow {
+    0% {
+      border-color: rgb(27, 86, 157); /* initial color */
+      box-shadow: 0 0 20px rgb(27, 86, 157); /* initial shadow */
+    }
+    100% {
+      border-color: rgb(50, 128, 223); /* final color */
+      box-shadow: 0 0 30px rgb(50, 128, 223); /* final shadow */
+    }
+} 
+/*Products*/
+.container{
+    width: 1200px;
+    margin: auto;
+    transition: 0.5s;
+    color: white;
+    margin-bottom: 100px;
+}
+.menu .shopping{
+    position: relative;
+    text-align: right;
+    padding-left: 20px;
+}
+.menu .shopping img{
+    width: 40px;
+    cursor: pointer;
+}
+.menu .shopping span{
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -10px;
+    left: 70%;
+    padding: 3px 10px;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: 50px;
+}
+.list .item{
+    text-align: center;
+    background-color: #6657d8;
+    padding: 20px;
+    box-shadow: 0 20px 20px #757676;
+    letter-spacing: 1px;
+    border-radius: 10%;
+}
+.list .item:hover{
+    transform: translateY(-3%);
+    transition: 0.5s;
+    box-shadow: 0 30px 30px rgb(169, 161, 194);
+}
+.list .item img{
+    width: 70%;
+    height: 250px;
+    object-fit: cover;
+}
+.list .item .title{
+    font-weight: 600;
+}
+.list .item .price{
+    margin: 10px;
+}
+.list .item button{
+    background-color: #1C1F25;
+    color: #fff;
+    width: 90%;
+    padding: 10px;
+    cursor: pointer;
+}
+.list .item button:hover{
+    transform: translateY(-10%);
+    background-color: #313640;
+    transition: 0.5s;
+}
+.card{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 700px;
+    background-color: rgb(50, 47, 47);
+    height: 100vh;
+    transition: 0.5s;
+    z-index: 222;
+    overflow: auto;
+}
+.active .card{
+    left: calc(100% - 500px);
+}
+.active .container{
+   transform: translateX(-200px);
+}
+.card h1{
+    color: #E8BC0E;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.card .checkOut{
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.card .checkOut div{
+    background-color: #2dad84;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.card .checkOut div:nth-child(2){
+    background-color: #932d2d;
+    color: #fff;
+}
+.card .checkOut div:nth-child(2):hover{
+    background-color: #ac4444;
+}
+.card .checkOut .closeShopping{
+    cursor: pointer;
+}
+.listCard{
+    margin-left: 10px;
+}
+.listCard li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+    margin-bottom: 10px;
+}
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCard li img{
+    width: 90%;
+}
+.listCard li button{
+    background-color: transparent;
+    font-size: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*Responsive Web*/
+@media only screen and (min-width: 0px) {
+    /*Navigation Bar*/
+    .navbar{
+        width: 100%;
+        padding: 20px;
+    }
+    .navbar .logo img{
+        width: 60px;
+        height: auto;
+    }
+    .navbar .menu li a{
+        margin-left: 7px;
+        font-size: 7px;
+    }
+    .menu .shopping{
+        text-align: right;
+        padding-left: 10px;
+    }
+    .menu .shopping img{
+        width: 15px;
+        cursor: pointer;
+    }
+    .menu .shopping span{
+        padding: 2px 3px;
+        font-size: 9px;
+    }
+
+    /*Content page*/
+    .content{
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: auto;
+    }
+    .content h1{
+        padding-top: 30px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .content p{
+        font-size: 9px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    /*Front heading page*/
+    .fpage{
+        margin: 20px auto 50px;
+        width: 80%;
+        padding: 20px 0;
+    }
+    .fpage img{
+        width: 100px;
+        height: 30px;
+        margin: auto;
+    }
+    .fdesc{
+        color: white;
+        font-size: 6px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /*Heading Home Page*/
+    .pheading{
+        font-size: 20px;
+        text-align: center;
+        margin: auto;
+        width: auto;
+    }
+
+    /*Products Container*/
+    .container{
+        width: 90%;
+        margin: auto;
+        transition: 0.5s;
+        color: white;
+        margin-bottom: 0;
+    }
+
+    /*Shopping Cart*/
+    .card{
+        position: fixed;
+        width: 170px;
+        margin-left: 200px;
+        height: 100vh;
+        transition: 0.5s;
+        overflow: scroll;
+        z-index: 222;
+    }
+    .active .card{
+        left: calc(100% - 370px);
+    }
+    .active .container{
+       transform: translateX(-10px);
+    }
+    .card h1{
+        color: #E8BC0E;
+        font-weight: 100;
+        font-size: 20px;
+        margin: 0;
+        padding: 0 10px;
+        height: 80px;
+    }
+    .card .checkOut div{
+        background-color: #2dad84;
+        height: 40px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .card .checkOut{
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*Each Product Card*/
+    .listCard{
+        margin-left: -20px;
+    }
+    .listCard li{
+        display: grid;
+        grid-template-columns: 100px repeat(3, 1fr);
+        color: #fff;
+        row-gap: 7px;
+        margin-bottom: 7px;
+    }
+    .listCard li img{
+        width: 35%;
+    }
+    .listCard li div{
+        margin-left: -10px;
+        font-size: 8px;
+        padding: 0;
+    }
+    .listCard li button{
+        background-color: transparent;
+        font-size: 7px;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .listCard .count{
+        margin: 0 10px;
+    }
+    
+
+    /*Products*/
+    .list{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 20px;
+        margin-top: 40px;
+    }
+    .list .item{
+        text-align: center;
+        background-color: #6657d8;
+        padding: 20px;
+        box-shadow: 0 20px 20px #757676;
+        letter-spacing: 1px;
+        border-radius: 10%;
+    }
+    .list .item:hover{
+        transform: translateY(-3%);
+        transition: 0.5s;
+        box-shadow: 0 30px 30px rgb(169, 161, 194);
+    }
+    .list .item img{
+        width: 60%;
+        height: auto;
+        object-fit: cover;
+    }
+    .list .item .title{
+        font-weight: 600;
+        font-size: 7px;
+    }
+    .list .item .price{
+        margin: 10px;
+        font-size: 7px;
+    }
+    .list .item button{
+        background-color: #1C1F25;
+        color: #fff;
+        width: 90%;
+        padding: 7px;
+        cursor: pointer;
+        font-size: 8px;
+    }
+    .list .item button:hover{
+        transform: translateY(-10%);
+        background-color: #313640;
+        transition: 0.5s;
+    }
+
+    /*Footer home page*/
+    footer{
+        width: 100%;
+        height: auto;
+    }
+    footer p{
+        color: white;
+        text-align: center;
+        line-height: 10vh;
+    }
+    footer p a{
+        text-decoration: none;
+        color: red;
+        font-weight: bold;
+    }
+
+    /*Footer about us page*/
+    .sec-footer{
+        width: 100%;
+        text-align: start;
+        padding-left: 1%;
+        padding-bottom: 20px;
+    }
+    .footer2, .footer3, .footer4, .footer5{
+        padding: 10px;
+    }
+    .footer2 h3, .footer3 h3, .footer4 h3, .footer5 h3{
+        padding-bottom: 7px;
+        font-size: 8px;
+    }
+    .footer2 h5, .footer3 h5, .footer4 h5, .footer5 h5{
+        padding-bottom: 3px;
+        font-size: 6px;
+    }
+    .footer4 img{
+        width: 8px;
+    }
+
+    /*About Us*/
+    .BGimage1{
+        padding-top: 100px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .BGimage1 .welcome h6{
+        font-size: 30px;
+    }
+    .maindesc{
+        padding: 30px;
+        width: 100%;
+        font-size: 10px;
+    }
+    .maindesc h1{
+        font-size: 20px;
+    }
+    .maindesc h2{
+        font-size: 10px;
+    }
+    .welcome h6{
+        color: white;
+        font-size: 50px;
+    }
+    .listdesc1, .listdesc2{
+        padding: 20px;
+        font-size: 6px;
+    }
+    .hr{
+        color: white;
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUs2{
+        width: 100%;
+        margin: auto;
+    }
+    .AB2{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUs2 img{
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 20px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        animation: glow 2s infinite alternate;
+    }
+    .AboutUs2 img, .AboutUs3 img{
+        display: block;
+        margin: auto;
+        width: 75%;
+        height: auto;
+    }
+    .AboutUs3{
+        margin: auto;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .AboutUs3 .AB3 img{
+        width: 90%;
+        height: auto;
+        padding-right: 1px;
+    }
+    .AB3{
+        display: flex;
+        margin: auto;
+        width: 90%;
+        padding: 30px;
+    }
+    .AB3img{
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUsdesc1{
+        color: white;
+        margin: auto;
+    }
+    .AboutUsdesc1 h2{
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .AboutUsdesc1 h3{
+        text-align: center;
+        padding: 10px;
+        font-size: 8px;
+    }
+    .aboutSec1, .aboutSec2{
+        width: 70%;
+        font-size: 8px;
+        margin: 100px auto 10px;
+        text-align: center;
+    }
+    .aboutSec1 h1{
+        margin-bottom: 50px;
+        padding: 20px 0;
+    }
+    .aboutSec2 h1{
+        margin-bottom: 10px;
+    }
+
+    /*About Us Slideshow image*/
+    .slideshow {
+        width: 70%;
+        margin: 20px auto 0;
+    }
+    .slide {
+        width: 100%;
+        height: 120px; 
+    }
+}
+@media only screen and (min-width: 295px) {
+
+    /*Navigation Bar*/
+    .navbar{
+        width: 100%;
+        padding: 20px;
+    }
+    .navbar .logo img{
+        width: 80px;
+        height: auto;
+    }
+    .navbar .menu li a{
+        margin-left: 7px;
+        font-size: 10px;
+    }
+    .menu .shopping{
+        text-align: right;
+        padding-left: 10px;
+    }
+    .menu .shopping img{
+        width: 18px;
+        cursor: pointer;
+    }
+    .menu .shopping span{
+        padding: 2px 5px;
+        font-size: 9px;
+    }
+
+    /*Content page*/
+    .content{
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 30vh;
+    }
+    .content h1{
+        padding-top: 30px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .content p{
+        font-size: 12px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    /*Front heading page*/
+    .fpage{
+        margin: 20px auto 50px;
+        width: 90%;
+        padding: 20px 0;
+    }
+    .fpage img{
+        width: 130px;
+        height: 40px;
+        margin: auto;
+    }
+    .fdesc{
+        color: white;
+        font-size: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /*Heading Home Page*/
+    .pheading{
+        font-size: 30px;
+        text-align: center;
+        margin: auto;
+        width: auto;
+    }
+
+    /*Products Container*/
+    .container{
+        width: 90%;
+        margin: auto;
+        transition: 0.5s;
+        color: white;
+        margin-bottom: 0;
+    }
+
+    /*Shopping Cart*/
+    .card{
+        position: fixed;
+        width: 200px;
+        margin-left: 200px;
+        height: 100vh;
+        transition: 0.5s;
+        overflow: scroll;
+        z-index: 222;
+    }
+    .active .card{
+        left: calc(100% - 400px);
+    }
+    .active .container{
+       transform: translateX(-10px);
+    }
+    .card h1{
+        color: #E8BC0E;
+        font-weight: 100;
+        font-size: 20px;
+        margin: 0;
+        padding: 0 10px;
+        height: 80px;
+    }
+    .card .checkOut div{
+        background-color: #2dad84;
+        height: 40px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .card .checkOut{
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*Each Product Card*/
+    .listCard{
+        margin-left: -20px;
+    }
+    .listCard li{
+        display: grid;
+        grid-template-columns: 100px repeat(3, 1fr);
+        color: #fff;
+        row-gap: 10px;
+        margin-bottom: 10px;
+    }
+    .listCard li img{
+        width: 40%;
+    }
+    .listCard li div{
+        margin-left: -10px;
+        font-size: 8px;
+        padding: 0;
+    }
+    .listCard li button{
+        background-color: transparent;
+        font-size: 7px;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .listCard .count{
+        margin: 0 10px;
+    }
+    
+
+    /*Products*/
+    .list{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 30px;
+        margin-top: 50px;
+    }
+    .list .item{
+        text-align: center;
+        background-color: #6657d8;
+        padding: 20px;
+        box-shadow: 0 20px 20px #757676;
+        letter-spacing: 1px;
+        border-radius: 10%;
+    }
+    .list .item:hover{
+        transform: translateY(-3%);
+        transition: 0.5s;
+        box-shadow: 0 30px 30px rgb(169, 161, 194);
+    }
+    .list .item img{
+        width: 60%;
+        height: auto;
+        object-fit: cover;
+    }
+    .list .item .title{
+        font-weight: 600;
+        font-size: 8px;
+    }
+    .list .item .price{
+        margin: 10px;
+        font-size: 8px;
+    }
+    .list .item button{
+        background-color: #1C1F25;
+        color: #fff;
+        width: 90%;
+        padding: 7px;
+        cursor: pointer;
+        font-size: 8px;
+    }
+    .list .item button:hover{
+        transform: translateY(-10%);
+        background-color: #313640;
+        transition: 0.5s;
+    }
+
+    /*Footer home page*/
+    footer{
+        width: 100%;
+        height: auto;
+    }
+    footer p{
+        color: white;
+        text-align: center;
+        line-height: 10vh;
+    }
+    footer p a{
+        text-decoration: none;
+        color: red;
+        font-weight: bold;
+    }
+
+    /*Footer about us page*/
+    .sec-footer{
+        width: 100%;
+        text-align: start;
+        padding-left: 1%;
+        padding-bottom: 20px;
+    }
+    .footer2, .footer3, .footer4, .footer5{
+        padding: 10px;
+    }
+    .footer2 h3, .footer3 h3, .footer4 h3, .footer5 h3{
+        padding-bottom: 10px;
+        font-size: 9px;
+    }
+    .footer2 h5, .footer3 h5, .footer4 h5, .footer5 h5{
+        padding-bottom: 10px;
+        font-size: 6px;
+    }
+    .footer4 img{
+        width: 9px;
+    }
+
+    /*About Us*/
+    .BGimage1{
+        padding-top: 100px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .BGimage1 .welcome h6{
+        font-size: 50px;
+    }
+    .maindesc{
+        padding: 30px;
+        width: 100%;
+        font-size: 20px;
+    }
+    .maindesc h1{
+        font-size: 30px;
+    }
+    .maindesc h2{
+        font-size: 15px;
+    }
+    .welcome h6{
+        color: white;
+        font-size: 80px;
+    }
+    .listdesc1, .listdesc2{
+        color: yellow;
+        padding: 20px;
+        font-size: 7px;
+    }
+    .hr{
+        color: white;
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUs2{
+        width: 100%;
+        margin: auto;
+    }
+    .AB2{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUs2 img{
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 24px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        animation: glow 2s infinite alternate;
+    }
+    .AboutUs2 img, .AboutUs3 img{
+        display: block;
+        margin: auto;
+        width: 70%;
+        height: auto;
+    }
+    .AboutUs3{
+        margin: auto;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .AboutUs3 .AB3 img{
+        width: 90%;
+        height: auto;
+        padding-right: 20px;
+    }
+    .AB3{
+        display: flex;
+        margin: auto;
+        width: 90%;
+        padding: 30px;
+    }
+    .AB3img{
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUsdesc1{
+        color: white;
+        margin: auto;
+    }
+    .AboutUsdesc1 h2{
+        text-align: center;
+        padding: 20px;
+        font-size: 15px;
+    }
+    .AboutUsdesc1 h3{
+        text-align: center;
+        padding: 20px;
+        font-size: 10px;
+    }
+    .aboutSec1, .aboutSec2{
+        width: 70%;
+        font-size: 10px;
+        margin: 100px auto 10px;
+        text-align: center;
+    }
+    .aboutSec1 h1{
+        margin-bottom: 50px;
+        padding: 20px 0;
+    }
+    .aboutSec2 h1{
+        margin-bottom: 10px;
+    }
+
+    /*About Us Slideshow image*/
+    .slideshow {
+        width: 70%;
+        margin: 20px auto 0;
+    }
+    .slide {
+        width: 100%;
+        height: 200px; 
+    }
+}
+@media only screen and (min-width: 420px) {
+
+    /*Navigation Bar*/
+    .navbar{
+        width: 100%;
+        padding: 20px;
+    }
+    .navbar .logo img{
+        width: 100px;
+        height: auto;
+    }
+    .navbar .menu li a{
+        margin-left: 7px;
+        font-size: 10px;
+    }
+    .menu .shopping{
+        text-align: right;
+        padding-left: 10px;
+    }
+    .menu .shopping img{
+        width: 20px;
+        cursor: pointer;
+    }
+    .menu .shopping span{
+        padding: 2px 5px;
+        font-size: 10px;
+    }
+
+    /*Content page*/
+    .content{
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 40vh;
+    }
+    .content h1{
+        padding-top: 10px;
+        font-size: 35px;
+        text-align: center;
+    }
+    .content p{
+        font-size: 25px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    /*Front heading page*/
+    .fpage{
+        margin: 20px auto 50px;
+        width: 90%;
+        padding: 20px 0;
+    }
+    .fpage img{
+        width: 150px;
+        height: 50px;
+        margin: auto;
+    }
+    .fdesc{
+        color: white;
+        font-size: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /*Heading Home Page*/
+    .pheading{
+        font-size: 35px;
+        text-align: center;
+        margin: auto;
+        width: auto;
+    }
+
+    /*Products Container*/
+    .container{
+        width: 90%;
+        margin: auto;
+        transition: 0.5s;
+        color: white;
+        margin-bottom: 100px;
+    }
+
+    /*Shopping Cart*/
+    .card{
+        position: fixed;
+        width: 200px;
+        margin-left: 200px;
+        height: 100vh;
+        transition: 0.5s;
+        overflow: scroll;
+        z-index: 222;
+    }
+    .active .card{
+        left: calc(100% - 400px);
+    }
+    .active .container{
+       transform: translateX(-10px);
+    }
+    .card h1{
+        color: #E8BC0E;
+        font-weight: 100;
+        font-size: 20px;
+        margin: 0;
+        padding: 0 10px;
+        height: 80px;
+    }
+    .card .checkOut div{
+        background-color: #2dad84;
+        height: 40px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .card .checkOut{
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*Each Product Card*/
+    .listCard{
+        margin-left: -20px;
+    }
+    .listCard li{
+        display: grid;
+        grid-template-columns: 100px repeat(3, 1fr);
+        color: #fff;
+        row-gap: 10px;
+        margin-bottom: 10px;
+    }
+    .listCard li img{
+        width: 40%;
+    }
+    .listCard li div{
+        margin-left: -10px;
+        font-size: 8px;
+        padding: 0;
+    }
+    .listCard li button{
+        background-color: transparent;
+        font-size: 7px;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    .listCard .count{
+        margin: 0 10px;
+    }
+    
+
+    /*Products*/
+    .list{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 30px;
+        margin-top: 50px;
+    }
+    .list .item{
+        text-align: center;
+        background-color: #6657d8;
+        padding: 20px;
+        box-shadow: 0 20px 20px #757676;
+        letter-spacing: 1px;
+        border-radius: 10%;
+    }
+    .list .item:hover{
+        transform: translateY(-3%);
+        transition: 0.5s;
+        box-shadow: 0 30px 30px rgb(169, 161, 194);
+    }
+    .list .item img{
+        width: 60%;
+        height: auto;
+        object-fit: cover;
+    }
+    .list .item .title{
+        font-weight: 600;
+        font-size: 10px;
+    }
+    .list .item .price{
+        margin: 10px;
+        font-size: 10px;
+    }
+    .list .item button{
+        background-color: #1C1F25;
+        color: #fff;
+        width: 70%;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 10px;
+    }
+    .list .item button:hover{
+        transform: translateY(-10%);
+        background-color: #313640;
+        transition: 0.5s;
+    }
+
+    /*Footer home page*/
+    footer{
+        width: 100%;
+        height: auto;
+    }
+    footer p{
+        color: white;
+        text-align: center;
+        line-height: 10vh;
+    }
+    footer p a{
+        text-decoration: none;
+        color: red;
+        font-weight: bold;
+    }
+
+    /*Footer about us page*/
+    .sec-footer{
+        width: 100%;
+        text-align: start;
+        padding-left: 15%;
+    }
+    .footer2, .footer3, .footer4, .footer5{
+        padding: 10px;
+    }
+    .footer2 h3, .footer3 h3, .footer4 h3, .footer5 h3{
+        padding-bottom: 10px;
+        font-size: 12px;
+    }
+    .footer2 h5, .footer3 h5, .footer4 h5, .footer5 h5{
+        padding-bottom: 9px;
+        font-size: 8px;
+    }
+    .footer4 img{
+        width: 9px;
+    }
+
+    /*About Us*/
+    .BGimage1{
+        padding-top: 100px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .BGimage1 .welcome h6{
+        font-size: 50px;
+    }
+    .maindesc{
+        padding: 30px;
+        width: 100%;
+        font-size: 20px;
+    }
+    .maindesc h1{
+        font-size: 30px;
+    }
+    .maindesc h2{
+        font-size: 15px;
+    }
+    .welcome h6{
+        color: white;
+        font-size: 80px;
+    }
+    .listdesc1, .listdesc2{
+        color: yellow;
+        padding: 20px;
+        font-size: 7px;
+    }
+    .hr{
+        color: white;
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUs2{
+        width: 100%;
+        margin: auto;
+    }
+    .AB2{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUs2 img{
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 24px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        animation: glow 2s infinite alternate;
+    }
+    .AboutUs2 img, .AboutUs3 img{
+        display: block;
+        margin: auto;
+        width: 70%;
+        height: auto;
+    }
+    .AboutUs3{
+        margin: auto;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .AboutUs3 .AB3 img{
+        width: 90%;
+        height: auto;
+        padding-right: 20px;
+    }
+    .AB3{
+        display: flex;
+        margin: auto;
+        width: 90%;
+        padding: 30px;
+    }
+    .AB3img{
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUsdesc1{
+        color: white;
+        margin: auto;
+    }
+    .AboutUsdesc1 h2{
+        text-align: center;
+        padding: 20px;
+        font-size: 15px;
+    }
+    .AboutUsdesc1 h3{
+        text-align: center;
+        padding: 20px;
+        font-size: 10px;
+    }
+    .aboutSec1, .aboutSec2{
+        width: 70%;
+        font-size: 10px;
+        margin: 100px auto 10px;
+        text-align: center;
+    }
+    .aboutSec1 h1{
+        margin-bottom: 50px;
+        padding: 20px 0;
+    }
+    .aboutSec2 h1{
+        margin-bottom: 10px;
+    }
+
+    /*About Us Slideshow image*/
+    .slideshow {
+        width: 70%;
+        margin: 20px auto 0;
+    }
+    .slide {
+        width: 100%;
+        height: 200px; 
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+    /*Navigation Bar*/
+    .navbar{
+        width: 100%;
+        padding: 20px;
+    }
+    .navbar .logo img{
+        width: 170px;
+        height: auto;
+    }
+    .navbar .menu li a{
+        margin-left: 7px;
+        font-size: 15px;
+    }
+    .menu .shopping{
+        text-align: right;
+        padding-left: 10px;
+    }
+    .menu .shopping img{
+        width: 25px;
+        cursor: pointer;
+    }
+    .menu .shopping span{
+        padding: 2px 5px;
+        font-size: 12px;
+    }
+
+    /*Content page*/
+    .content{
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 40vh;
+    }
+    .content h1{
+        padding-top: 10px;
+        font-size: 50px;
+        text-align: center;
+    }
+    .content p{
+        font-size: 30px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    /*Front heading page*/
+    .fpage{
+        margin: 20px auto 50px;
+        width: 90%;
+        padding: 20px 0;
+    }
+    .fpage img{
+        width: 150px;
+        height: 50px;
+        margin: auto;
+    }
+    .fdesc{
+        font-size: 13px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /*Heading Home Page*/
+    .pheading{
+        font-size: 40px;
+        text-align: center;
+        margin: auto;
+        width: auto;
+    }
+
+    /*Products Container*/
+    .container{
+        width: 90%;
+        margin: auto;
+        transition: 0.5s;
+        margin-bottom: 100px;
+    }
+
+    /*Shopping Cart*/
+    .card{
+        position: fixed;
+        width: 300px;
+        margin-left: 200px;
+        height: 100vh;
+        transition: 0.5s;
+        overflow: scroll;
+        z-index: 222;
+    }
+    .active .card{
+        left: calc(100% - 500px);
+    }
+    .active .container{
+       transform: translateX(-10px);
+    }
+    .card h1{
+        font-weight: 300;
+        font-size: 25px;
+        margin: 0;
+        padding: 0 10px;
+        height: 80px;
+    }
+    .card .checkOut div{
+        background-color: #2dad84;
+        height: 40px;
+        font-size: 15px;
+    }
+    .card .checkOut{
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*Each Product Card*/
+    .listCard{
+        margin-left: -20px;
+    }
+    .listCard li{
+        row-gap: 20px;
+        margin-bottom: 10px;
+    }
+    .listCard li img{
+        width: 70%;
+    }
+    .listCard li div{
+        margin-left: 15px;
+        font-size: 12px;
+        padding: 0;
+    }
+    .listCard li button{
+        background-color: transparent;
+        font-size: 7px;
+    }
+    .listCard .count{
+        margin: 0 10px;
+    }
+    
+
+    /*Products*/
+    .list{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        row-gap: 40px;
+    }
+    .list .item{
+        text-align: center;
+        padding: 30px;
+    }
+    .list .item img{
+        width: 60%;
+        height: auto;
+        object-fit: cover;
+    }
+    .list .item .title{
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .list .item .price{
+        margin: 10px;
+        font-size: 15px;
+    }
+    .list .item button{
+        width: 70%;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    /*Footer about us page*/
+    .sec-footer{
+        width: 100%;
+        text-align: start;
+        padding-left: 5%;
+    }
+    .footer2, .footer3, .footer4, .footer5{
+        padding: 10px;
+    }
+    .footer2 h3, .footer3 h3, .footer4 h3, .footer5 h3{
+        padding-bottom: 10px;
+        font-size: 17px;
+    }
+    .footer2 h5, .footer3 h5, .footer4 h5, .footer5 h5{
+        padding-bottom: 9px;
+        font-size: 12px;
+    }
+    .footer4 img{
+        width: 14px;
+    }
+
+    /*About Us*/
+    .BGimage1{
+        padding-top: 100px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .BGimage1 .welcome h6{
+        margin-top: 20px;
+        font-size: 60px;
+    }
+    .maindesc{
+        padding: 30px;
+        width: 100%;
+        font-size: 25px;
+    }
+    .maindesc h1{
+        font-size: 35px;
+    }
+    .maindesc h2{
+        font-size: 20px;
+    }
+    .welcome h6{
+        font-size: 80px;
+        margin-top: 20px;
+    }
+    .listdesc1, .listdesc2{
+        color: yellow;
+        padding: 20px;
+        font-size: 8px;
+    }
+    .hr{
+        color: white;
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUs2{
+        width: 100%;
+        margin: auto;
+    }
+    .AB2{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUs2 img{
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 24px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        animation: glow 2s infinite alternate;
+    }
+    .AboutUs2 img, .AboutUs3 img{
+        display: block;
+        margin: auto;
+        width: 70%;
+        height: auto;
+    }
+    .AboutUs3{
+        margin: auto;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .AboutUs3 .AB3 img{
+        width: 75%;
+        height: auto;
+        padding-right: 10px;
+    }
+    .AB3{
+        display: flex;
+        margin: auto;
+        width: 90%;
+        padding: 30px;
+    }
+    .AB3img{
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUsdesc1{
+        color: white;
+        margin: auto;
+    }
+    .AboutUsdesc1 h2{
+        text-align: center;
+        padding: 20px;
+        font-size: 25px;
+    }
+    .AboutUsdesc1 h3{
+        text-align: center;
+        padding: 20px;
+        font-size: 15px;
+    }
+    .aboutSec1, .aboutSec2{
+        width: 70%;
+        font-size: 10px;
+        margin: 100px auto 10px;
+        text-align: center;
+    }
+    .aboutSec1 h1{
+        margin-bottom: 50px;
+        padding: 20px 0;
+    }
+    .aboutSec2 h1{
+        margin-bottom: 10px;
+    }
+
+    /*About Us Slideshow image*/
+    .slideshow {
+        width: 70%;
+        margin: 20px auto 0;
+    }
+    .slide {
+        width: 100%;
+        height: 250px; 
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px){
+    /*Navigation Bar*/
+    .navbar{
+        width: 100%;
+        padding: 15px;
+    }
+    .navbar .logo img{
+        width: 190px;
+        height: auto;
+    }
+    .navbar .menu li a{
+        margin-left: 7px;
+        font-size: 19px;
+    }
+    .menu .shopping img{
+        width: 27px;
+        cursor: pointer;
+    }
+    .menu .shopping span{
+        padding: 2px 5px;
+        font-size: 15px;
+    }
+
+    /*Content page*/
+    .content{
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 60vh;
+    }
+    .content h1{
+        padding-top: 10px;
+        font-size: 60px;
+        text-align: center;
+    }
+    .content p{
+        font-size: 35px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    /*Front heading page*/
+    .fpage{
+        margin: 20px auto 50px;
+        width: 90%;
+        padding: 20px 0;
+    }
+    .fpage img{
+        width: 200px;
+        height: 100px;
+        margin: auto;
+    }
+    .fdesc{
+        font-size: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /*Heading Home Page*/
+    .pheading{
+        font-size: 70px;
+        text-align: center;
+        margin: auto;
+        width: auto;
+    }
+
+    /*Products Container*/
+    .container{
+        width: 90%;
+        margin: auto;
+        transition: 0.5s;
+        margin-bottom: 100px;
+    }
+
+    /*Shopping Cart*/
+    .card{
+        position: fixed;
+        width: 400px;
+        margin-left: 200px;
+        height: 100vh;
+        transition: 0.5s;
+        overflow: scroll;
+        z-index: 222;
+    }
+    .active .card{
+        left: calc(100% - 600px);
+    }
+    .active .container{
+       transform: translateX(-30px);
+    }
+    .card h1{
+        font-weight: 300;
+        font-size: 25px;
+        margin: 0;
+        padding: 0 10px;
+        height: 90px;
+    }
+    .card .checkOut{
+        bottom: -1px;
+    }
+    .card .checkOut div{
+        background-color: #2dad84;
+        height: 50px;
+        font-size: 17px;
+    }
+
+    /*Each Product Card*/
+    .listCard{
+        margin-left: 0;
+    }
+    .listCard li{
+        row-gap: 20px;
+        margin-bottom: 10px;
+    }
+    .listCard li img{
+        width: 70%;
+    }
+    .listCard li div{
+        margin-left: 15px;
+        font-size: 14px;
+        padding: 0;
+    }
+    .listCard li button{
+        background-color: transparent;
+        font-size: 10px;
+    }
+    
+    /*Products*/
+    .list{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        row-gap: 40px;
+    }
+    .list .item{
+        text-align: center;
+        padding: 30px;
+    }
+    .list .item img{
+        width: 60%;
+        height: auto;
+        object-fit: cover;
+    }
+    .list .item .title{
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .list .item .price{
+        margin: 10px;
+        font-size: 15px;
+    }
+    .list .item button{
+        width: 70%;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    /*Footer about us page*/
+    .sec-footer{
+        width: 100%;
+        text-align: start;
+        padding-left: 10%;
+        padding-bottom: 10px;
+    }
+    .footer2, .footer3, .footer4, .footer5{
+        padding: 10px;
+    }
+    .footer2 h3, .footer3 h3, .footer4 h3, .footer5 h3{
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    .footer2 h5, .footer3 h5, .footer4 h5, .footer5 h5{
+        padding-bottom: 9px;
+        font-size: 12px;
+    }
+    .footer4 img{
+        width: 15px;
+    }
+
+    /*About Us*/
+    .BGimage1{
+        padding-top: 100px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .BGimage1 .welcome h6{
+        margin-top: 20px;
+        font-size: 70px;
+    }
+    .maindesc{
+        padding: 30px;
+        width: 100%;
+        font-size: 30px;
+    }
+    .maindesc h1{
+        font-size: 45px;
+    }
+    .maindesc h2{
+        font-size: 25px;
+    }
+    .BGimage1 .welcome h6{
+        font-size: 80px;
+        margin-top: 20px;
+    }
+    .listdesc1, .listdesc2{
+        color: yellow;
+        padding: 20px;
+        font-size: 10px;
+    }
+    .hr{
+        color: white;
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUs2{
+        width: 100%;
+        margin: auto;
+    }
+    .AB2{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUs2 img{
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 24px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        animation: glow 2s infinite alternate;
+    }
+    .AboutUs2 img, .AboutUs3 img{
+        display: block;
+        margin: auto;
+        width: 75%;
+        height: auto;
+    }
+    .AboutUs3{
+        margin: auto;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .AboutUs3 .AB3 img{
+        width: 75%;
+        height: auto;
+        padding-right: 10px;
+    }
+    .AB3{
+        display: flex;
+        margin: auto;
+        width: 90%;
+        padding: 30px;
+    }
+    .AB3img{
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUsdesc1{
+        color: white;
+        margin: auto;
+    }
+    .AboutUsdesc1 h2{
+        text-align: center;
+        padding: 20px;
+        font-size: 25px;
+    }
+    .AboutUsdesc1 h3{
+        text-align: center;
+        padding: 20px;
+        font-size: 15px;
+    }
+    .aboutSec1, .aboutSec2{
+        width: 70%;
+        font-size: 15px;
+        margin: 100px auto 10px;
+        text-align: center;
+    }
+    .aboutSec1 h1{
+        margin-bottom: 50px;
+        padding: 20px 0;
+    }
+    .aboutSec2 h1{
+        margin-bottom: 10px;
+    }
+
+    /*About Us Slideshow image*/
+    .slideshow {
+        width: 70%;
+        margin: 20px auto 0;
+    }
+    .slide {
+        width: 100%;
+        height: 300px; 
+    }
+    /*About Us*/
+    .BGimage1{
+        padding-top: 100px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .BGimage1 .welcome h6{
+        margin-top: 20px;
+        font-size: 70px;
+    }
+    .maindesc{
+        padding: 30px;
+        width: 100%;
+        font-size: 30px;
+    }
+    .maindesc h1{
+        font-size: 45px;
+    }
+    .maindesc h2{
+        font-size: 25px;
+    }
+    .BGimage1 .welcome h6{
+        font-size: 80px;
+        margin-top: 20px;
+    }
+    .listdesc1, .listdesc2{
+        color: yellow;
+        padding: 20px;
+        font-size: 10px;
+    }
+    .hr{
+        color: white;
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUs2{
+        width: 100%;
+        margin: auto;
+    }
+    .AB2{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUs2 img{
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 24px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        animation: glow 2s infinite alternate;
+    }
+    .AboutUs2 img, .AboutUs3 img{
+        display: block;
+        margin: auto;
+        width: 75%;
+        height: auto;
+    }
+    .AboutUs3{
+        margin: auto;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .AboutUs3 .AB3 img{
+        width: 75%;
+        height: auto;
+        padding-right: 10px;
+    }
+    .AB3{
+        display: flex;
+        margin: auto;
+        width: 90%;
+        padding: 30px;
+    }
+    .AB3img{
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUsdesc1{
+        color: white;
+        margin: auto;
+    }
+    .AboutUsdesc1 h2{
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+    }
+    .AboutUsdesc1 h3{
+        text-align: center;
+        padding: 20px;
+        font-size: 17px;
+    }
+    .aboutSec1, .aboutSec2{
+        width: 70%;
+        font-size: 15px;
+        margin: 100px auto 10px;
+        text-align: center;
+    }
+    .aboutSec1 h1{
+        margin-bottom: 50px;
+        padding: 20px 0;
+    }
+    .aboutSec2 h1{
+        margin-bottom: 10px;
+    }
+
+    /*About Us Slideshow image*/
+    .slideshow {
+        width: 70%;
+        margin: 20px auto 0;
+    }
+    .slide {
+        width: 100%;
+        height: 300px; 
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /*Navigation Bar*/
+    .navbar{
+        width: 100%;
+        padding: 20px;
+    }
+    .navbar .logo img{
+        width: 190px;
+        height: auto;
+    }
+    .navbar .menu li a{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    .menu .shopping img{
+        width: 45px;
+        cursor: pointer;
+    }
+    .menu .shopping span{
+        padding: 3px 10px;
+        font-size: 20px;
+    }
+
+    /*Content page*/
+    .content{
+        height: 60vh;
+        padding-top: 5%;
+    }
+    .content h1{
+        padding-top: 20px;
+        font-size: 90px;
+    }
+    .content p{
+        font-size: 55px;
+        margin-top: 10px;
+    }
+
+
+    /*Front heading page*/
+    .fpage{
+        margin: 50px auto;
+        width: 90%;
+        padding: 20px 0;
+    }
+    .fpage img{
+        width: auto;
+        height: 100px;
+        margin: auto;
+    }
+    .fdesc{
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /*Heading Home Page*/
+    .pheading{
+        font-size: 70px;
+        text-align: center;
+        margin: auto;
+        width: auto;
+    }
+
+    /*Products Container*/
+    .container{
+        width: 90%;
+        margin: auto;
+        transition: 0.5s;
+        margin-bottom: 100px;
+    }
+
+    /*Shopping Cart*/
+    .card{
+        position: fixed;
+        width: 400px;
+        margin-left: 200px;
+        height: 100vh;
+        transition: 0.5s;
+        overflow: scroll;
+        z-index: 222;
+    }
+    .active .card{
+        left: calc(100% - 600px);
+    }
+    .active .container{
+       transform: translateX(-30px);
+    }
+    .card h1{
+        font-weight: 300;
+        font-size: 25px;
+        margin: 0;
+        padding: 0 10px;
+        height: 90px;
+    }
+    .card .checkOut{
+        bottom: -1px;
+    }
+    .card .checkOut div{
+        background-color: #2dad84;
+        height: 50px;
+        font-size: 17px;
+    }
+
+    /*Each Product Card*/
+    .listCard{
+        margin-left: 0;
+    }
+    .listCard li{
+        row-gap: 20px;
+        margin-bottom: 10px;
+    }
+    .listCard li img{
+        width: 70%;
+    }
+    .listCard li div{
+        margin-left: 15px;
+        font-size: 14px;
+        padding: 0;
+    }
+    .listCard li button{
+        background-color: transparent;
+        font-size: 10px;
+    }
+    
+    /*Products*/
+    .list{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        row-gap: 40px;
+    }
+    .list .item{
+        text-align: center;
+        padding: 30px;
+    }
+    .list .item img{
+        width: 60%;
+        height: auto;
+        object-fit: cover;
+    }
+    .list .item .title{
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .list .item .price{
+        margin: 10px;
+        font-size: 15px;
+    }
+    .list .item button{
+        width: 70%;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    /*Footer about us page*/
+    .sec-footer{
+        width: 100%;
+        text-align: start;
+        padding-left: 13%;
+        padding-bottom: 10px;
+    }
+    .footer2, .footer3, .footer4, .footer5{
+        padding: 10px;
+    }
+    .footer2 h3, .footer3 h3, .footer4 h3, .footer5 h3{
+        padding-bottom: 10px;
+        font-size: 25px;
+    }
+    .footer2 h5, .footer3 h5, .footer4 h5, .footer5 h5{
+        padding-bottom: 9px;
+        font-size: 12px;
+    }
+    .footer4 img{
+        width: 15px;
+    }
+
+    /*About Us*/
+    .BGimage1{
+        padding-top: 100px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .BGimage1 .welcome h6{
+        margin-top: 20px;
+        font-size: 80px;
+    }
+    .maindesc{
+        padding: 30px;
+        width: 100%;
+        font-size: 30px;
+    }
+    .maindesc h1{
+        font-size: 50px;
+    }
+    .maindesc h2{
+        font-size: 30px;
+    }
+    .BGimage1 .welcome h6{
+        font-size: 80px;
+        margin-top: 20px;
+    }
+    .listdesc1, .listdesc2{
+        color: yellow;
+        padding: 20px;
+        font-size: 13px;
+    }
+    .hr{
+        color: white;
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUs2{
+        width: 100%;
+        margin: auto;
+    }
+    .AB2{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUs2 img{
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 24px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        animation: glow 2s infinite alternate;
+    }
+    .AboutUs2 img, .AboutUs3 img{
+        display: block;
+        margin: auto;
+        width: 75%;
+        height: auto;
+    }
+    .AboutUs3{
+        margin: auto;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .AboutUs3 .AB3 img{
+        width: 75%;
+        height: auto;
+        padding-right: 10px;
+    }
+    .AB3{
+        display: flex;
+        margin: auto;
+        width: 90%;
+        padding: 30px;
+    }
+    .AB3img{
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUsdesc1{
+        color: white;
+        margin: auto;
+    }
+    .AboutUsdesc1 h2{
+        text-align: center;
+        padding: 20px;
+        font-size: 40px;
+    }
+    .AboutUsdesc1 h3{
+        text-align: center;
+        padding: 20px;
+        font-size: 23px;
+    }
+    .aboutSec1, .aboutSec2{
+        width: 70%;
+        font-size: 20px;
+        margin: 100px auto 10px;
+        text-align: center;
+    }
+    .aboutSec1 h1{
+        margin-bottom: 50px;
+        padding: 20px 0;
+    }
+    .aboutSec2 h1{
+        margin-bottom: 10px;
+    }
+
+    /*About Us Slideshow image*/
+    .slideshow {
+        width: 70%;
+        margin: 20px auto 0;
+    }
+    .slide {
+        width: 100%;
+        height: 400px; 
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    /*About Us*/
+    .BGimage1{
+        padding-top: 100px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .BGimage1 .welcome h6{
+        margin-top: 20px;
+        font-size: 80px;
+    }
+    .maindesc{
+        padding: 30px;
+        width: 100%;
+        font-size: 30px;
+    }
+    .maindesc h1{
+        font-size: 50px;
+    }
+    .maindesc h2{
+        font-size: 30px;
+    }
+    .BGimage1 .welcome h6{
+        font-size: 80px;
+        margin-top: 20px;
+    }
+    .listdesc1, .listdesc2{
+        color: yellow;
+        padding: 20px;
+        font-size: 13px;
+    }
+    .hr{
+        color: white;
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUs2{
+        width: 100%;
+        margin: auto;
+    }
+    .AB2{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUs2 img{
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 24px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        animation: glow 2s infinite alternate;
+    }
+    .AboutUs2 img, .AboutUs3 img{
+        display: block;
+        margin: auto;
+        width: 75%;
+        height: auto;
+    }
+    .AboutUs3{
+        margin: auto;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .AboutUs3 .AB3 img{
+        width: 60%;
+        height: auto;
+        padding-right: 10px;
+    }
+    .AB3{
+        display: flex;
+        margin: auto;
+        width: 90%;
+        padding: 30px;
+    }
+    .AB3img{
+        width: 90%;
+        margin: auto;
+    }
+    .AboutUsdesc1{
+        color: white;
+        margin: auto;
+    }
+    .AboutUsdesc1 h2{
+        text-align: center;
+        padding: 20px;
+        font-size: 45px;
+    }
+    .AboutUsdesc1 h3{
+        text-align: center;
+        padding: 20px;
+        font-size: 27px;
+    }
+    .aboutSec1, .aboutSec2{
+        width: 70%;
+        font-size: 20px;
+        margin: 100px auto 10px;
+        text-align: center;
+    }
+    .aboutSec1 h1{
+        margin-bottom: 50px;
+        padding: 20px 0;
+    }
+    .aboutSec2 h1{
+        margin-bottom: 10px;
+    }
+
+    /*About Us Slideshow image*/
+    .slideshow {
+        width: 70%;
+        margin: 20px auto 0;
+    }
+    .slide {
+        width: 100%;
+        height: 400px; 
+    }
+}
